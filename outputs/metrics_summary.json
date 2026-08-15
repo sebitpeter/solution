@@ -1,0 +1,40 @@
+{
+  "label": "liquidity_stress_next_30d",
+  "logloss": 0.2585963703481615,
+  "roc_auc": 0.8967022990196077,
+  "score": 0.8035230973989462,
+  "weights": {
+    "lightgbm": 0.45691388674148076,
+    "catboost": 0.11821538892584561,
+    "xgboost": 0.42487072433267364
+  },
+  "candidate_scores": {
+    "optimized_blend": 0.8035230973989462,
+    "rank_average": 0.5602367418590051,
+    "logistic_stack": 0.7959690225185222
+  },
+  "selected_ensemble": "optimized_blend",
+  "calibration_methods": {
+    "lightgbm": "isotonic",
+    "catboost": "isotonic",
+    "xgboost": "isotonic"
+  },
+  "calibration_scores": {
+    "lightgbm": {
+      "raw": 0.8009186769885981,
+      "isotonic": 0.8019556355677097,
+      "platt": 0.7948670005928151
+    },
+    "catboost": {
+      "raw": 0.7922595715816725,
+      "isotonic": 0.7966682604930897,
+      "platt": 0.7906215103903226
+    },
+    "xgboost": {
+      "raw": 0.8009321040238018,
+      "isotonic": 0.8020007015165616,
+      "platt": 0.7951440742109889
+    }
+  },
+  "diagnostic_f1_threshold": 0.3
+}

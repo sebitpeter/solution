@@ -1,0 +1,18 @@
+{
+  "n_train": 40000,
+  "n_test": 30000,
+  "seed": 42,
+  "splits": 5,
+  "models": [
+    "lightgbm",
+    "catboost",
+    "xgboost"
+  ],
+  "feature_version": 4,
+  "advanced_fold_features": false,
+  "model_seeds": [
+    42,
+    2026,
+    777
+  ]
+}
